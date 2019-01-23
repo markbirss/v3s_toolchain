@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+libdir=${exec_prefix}/lib
+xcbincludedir=/opt/retro-v3s/arm-retrov3s-linux-uclibcgnueabi/sysroot${datadir}/xcb
+pythondir=/opt/retro-v3s/arm-retrov3s-linux-uclibcgnueabi/sysroot${prefix}/lib/python2.7/site-packages
+
+Name: XCB Proto
+Description: X protocol descriptions for XCB
+Version: 1.12

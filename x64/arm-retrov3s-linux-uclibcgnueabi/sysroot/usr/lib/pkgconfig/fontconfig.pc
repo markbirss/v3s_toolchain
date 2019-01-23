@@ -1,0 +1,18 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+sysconfdir=/etc
+localstatedir=/var
+PACKAGE=fontconfig
+confdir=${sysconfdir}/fonts
+cachedir=/var/cache/fontconfig
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.12.4
+Requires:  freetype2
+Requires.private:  expat
+Libs: -L${libdir} -lfontconfig
+Libs.private: -L/opt/retro-v3s/bin/../arm-retrov3s-linux-uclibcgnueabi/sysroot/usr/lib -lexpat   -L/opt/retro-v3s/bin/../arm-retrov3s-linux-uclibcgnueabi/sysroot/usr/lib -lfreetype    
+Cflags: -I${includedir} -I/opt/retro-v3s/bin/../arm-retrov3s-linux-uclibcgnueabi/sysroot/usr/include   -I/opt/retro-v3s/bin/../arm-retrov3s-linux-uclibcgnueabi/sysroot/usr/include/freetype2 -I/opt/retro-v3s/bin/../arm-retrov3s-linux-uclibcgnueabi/sysroot/usr/include    

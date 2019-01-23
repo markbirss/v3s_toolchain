@@ -1,0 +1,2 @@
+#! /bin/sh
+exec '/opt/retro-v3s/bin/bison' -y "$@"

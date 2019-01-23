@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PATH="/opt/retro-v3s/bin:$PATH"
+
+exec mkfontscale -b -s -l "$@"

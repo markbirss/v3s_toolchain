@@ -1,0 +1,14 @@
+prefix=/opt/retro-v3s
+exec_prefix=/opt/retro-v3s
+libdir=/opt/retro-v3s/lib
+includedir=/opt/retro-v3s/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 21.0.15
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

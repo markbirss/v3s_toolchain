@@ -1,0 +1,16 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+glib_genmarshal=glib-genmarshal
+gobject_query=gobject-query
+glib_mkenums=glib-mkenums
+
+Name: GLib
+Description: C Utility Library
+Version: 2.54.2
+Requires.private: libpcre
+Libs: -L${libdir} -lglib-2.0 
+Libs.private: -pthread  -L/opt/retro-v3s/bin/../arm-retrov3s-linux-uclibcgnueabi/sysroot/usr/lib -lpcre    -liconv  
+Cflags: -I${includedir}/glib-2.0 -I${libdir}/glib-2.0/include 

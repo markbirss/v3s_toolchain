@@ -1,0 +1,11 @@
+prefix=/opt/retro-v3s
+exec_prefix=/opt/retro-v3s
+libdir=/opt/retro-v3s/lib
+includedir=/opt/retro-v3s/include
+
+Name: blkid
+Description: Block device id library
+Version: 2.31.1
+Requires.private: uuid
+Cflags: -I${includedir}/blkid
+Libs: -L${libdir} -lblkid
